@@ -6,7 +6,7 @@ title: Fitness Hunter Privacy Policy
 
 ## Current version and changes
 
-Last updated 11 September 2026.
+Last updated 16 September 2026.
 
 This policy describes Fitness Hunter as it ships today, including its communication with a Fitness Hunter server.
 
@@ -48,7 +48,7 @@ Your device's own backup service may include Fitness Hunter's database. On iPhon
 
 ## Optional account linking
 
-If you choose Link with Apple or Link with Google, the relevant provider SDK handles that identity request. Fitness Hunter stores an account record containing the provider, subject identifier, and linked-at time.
+If you choose Link with Apple or Link with Google, the relevant provider SDK handles that identity request. Fitness Hunter stores an account record containing the provider, subject identifier, linked-at time, and, when the provider supplies one, the email address for that account. The app shows that email in Settings so you can see which account is linked. The email stays on your device and is not sent to the Fitness Hunter server. If you use Apple's Hide My Email, the stored address is the relay address Apple provides.
 
 The Fitness Hunter server verifies the provider token before creating a server session. It stores a hash of that session token, rather than the token itself.
 
@@ -66,7 +66,7 @@ When you select Export data, the app makes a JSON file containing its raw-log ta
 
 Your raw training log and other app data stay on your device until you remove them. The server copy is limited to the linked-account identity and session metadata, derived profile snapshot, username and tag, and friendship records described above.
 
-Unlinking removes the account record and session from this device and attempts to delete that session from the server. It does not delete the server-side linked-account identity, derived profile snapshot, username, or friendship records, and it does not delete your training history, which stays under the local identity the app created the first time you opened it. The permanent record of any username and tag pair you claimed is also not deleted, for the reason described above. To ask for deletion of server-side data, contact maerasoft@gmail.com.
+Unlinking removes the account record, including its stored email address, and the session from this device and attempts to delete that session from the server. It does not delete the server-side linked-account identity, derived profile snapshot, username, or friendship records, and it does not delete your training history, which stays under the local identity the app created the first time you opened it. The permanent record of any username and tag pair you claimed is also not deleted, for the reason described above. To ask for deletion of server-side data, contact maerasoft@gmail.com.
 
 Deleting the app removes its database from your device. That cannot be undone, so use Export data first if you want to keep a copy.
 
