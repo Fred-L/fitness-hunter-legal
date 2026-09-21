@@ -18,7 +18,7 @@ Fitness Hunter keeps application data in an on-device SQLite database. This incl
 
 Fitness Hunter has a server operated by the developer on Cloudflare Workers and Cloudflare D1. It stores an optional linked-account identity, session metadata, a derived profile snapshot, the username and tag described below, and friendship records; it does not sync the on-device database.
 
-The derived profile snapshot contains your overall rank (or no rank), Power Level (or no Power Level), titles and cosmetics, and any enabled applicable sharing fields. The applicable sharing fields are the STR, END, and VIT domain ranks, your rounded current-week average steps, and your current streak. A disabled field is omitted from the snapshot rather than sent empty. Titles and cosmetics are currently sent as empty lists because those features are not built.
+The derived profile snapshot contains your overall rank (or no rank), Power Level (or no Power Level), titles and cosmetics, and any enabled applicable sharing fields. The applicable sharing fields are the STR, END, and VIT domain ranks, your rounded current-week average steps, and your training days per week. A disabled field is omitted from the snapshot rather than sent empty. Titles and cosmetics are currently sent as empty lists because those features are not built.
 
 The raw training log stays on your device. Fitness Hunter does not upload workout or set rows, cardio rows, bodyweight rows, health-metric rows, or daily step rows. It also does not upload the rest of your on-device database.
 
@@ -36,7 +36,7 @@ A friendship is one server row for a pair of users. Its state can be pending, ac
 
 The server authorizes every friend-data read. A request for a friend's profile is allowed only for an accepted friendship; otherwise the server returns the same not-found response used when no profile exists.
 
-You can choose whether your sub-ranks, steps, and streak are included in your derived profile snapshot for friends. Disabled fields are omitted rather than sent empty. The app also stores a workout-history sharing preference, but there is no workout-history server feature, so it currently controls no server data.
+You can choose whether your sub-ranks, steps, and training days are included in your derived profile snapshot for friends. Disabled fields are omitted rather than sent empty. The app also stores a workout-history sharing preference, but there is no workout-history server feature, so it currently controls no server data.
 
 An invite link contains your username and tag in its URL. You choose the app or destination through which to share it, and the developer does not control where it travels. The server stores no record of invite links. A browser fallback page is built from the name and tag in the URL without a database lookup and shows nothing beyond that handle.
 
