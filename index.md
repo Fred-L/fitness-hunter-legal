@@ -6,7 +6,7 @@ title: Fitness Hunter Privacy Policy
 
 ## Current version and changes
 
-Last updated 16 September 2026.
+Last updated 30 September 2026.
 
 This policy describes Fitness Hunter as it ships today, including its communication with a Fitness Hunter server.
 
@@ -36,11 +36,15 @@ A friendship is one server row for a pair of users. Its state can be pending, ac
 
 The server authorizes every friend-data read. A request for a friend's profile is allowed only for an accepted friendship; otherwise the server returns the same not-found response used when no profile exists.
 
-You can choose whether your sub-ranks, steps, and training days are included in your derived profile snapshot for friends. Disabled fields are omitted rather than sent empty. The app also stores a workout-history sharing preference, but there is no workout-history server feature, so it currently controls no server data.
+You can choose whether your stat ranks, steps, training days, and workout history are included in your derived profile snapshot for friends. Disabled fields are omitted rather than sent empty. Stat ranks sends the letter grade of each of your six stats. Workout history sends up to your 12 most recent workouts, each with its name if you named it, the muscles it worked, its lifting minutes, and its exercises with their working sets and warm-up sets, including each set's weight, reps, RPE, and whether it was a personal record. It also sends a set note only when you chose to share that note with friends; notes you keep private are never sent. Turning workout history off removes all of this from your snapshot.
 
 An invite link contains your username and tag in its URL. You choose the app or destination through which to share it, and the developer does not control where it travels. The server stores no record of invite links. A browser fallback page is built from the name and tag in the URL without a database lookup and shows nothing beyond that handle.
 
 You can report a friend from their profile. A report needs an existing friendship record between you and that person. The server sends the reported handle, your own handle, and any reason you write, by email to the developer through Resend, a third-party email delivery service. Reports are not stored in the server's database and there is no moderation queue.
+
+## Contributing to rankings
+
+Contributing to rankings is off unless you turn it on, and it works only with a linked account. When it is on, after you finish a workout the app sends, at most once a month for each exercise, your best estimated 1-rep max for that exercise together with your bodyweight, height and sex (male or female), rounded. It never sends your name, handle, account, friends, date of birth, notes or custom exercise names. The server stores each entry with the month only and no identifier, and separately counts how many entries each account sent that month, to cap them at 60, but never which ones. Turning it off stops future contributions. Past contributions stay in the pool because nothing identifies them.
 
 ## Device backups
 
@@ -61,6 +65,10 @@ On iOS, Fitness Hunter reads step counts directly with CoreMotion's CMPedometer.
 ## Export
 
 When you select Export data, the app makes a JSON file containing its raw-log tables, formula versions, and custom exercises, then opens your device's system share sheet. It does not choose a recipient. The file can leave your device only when you select a sharing destination.
+
+## Feedback
+
+If you choose Send feedback, the message you write is sent to the Fitness Hunter server along with your app version, phone model, and a random installation identifier, and is kept there so the developer can read it.
 
 ## Keeping and removing your data
 
