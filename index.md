@@ -36,7 +36,7 @@ A friendship is one server row for a pair of users. Its state can be pending, ac
 
 The server authorizes every friend-data read. A request for a friend's profile is allowed only for an accepted friendship; otherwise the server returns the same not-found response used when no profile exists.
 
-You can choose whether your stat ranks, steps, training days, and workout history are included in your derived profile snapshot for friends. Disabled fields are omitted rather than sent empty. Stat ranks sends the letter grade of each of your six stats. Workout history sends up to your 12 most recent workouts, each with its name if you named it, the muscles it worked, its lifting minutes, and its exercises with their working sets and warm-up sets, including each set's weight, reps, RPE, and whether it was a personal record. It also sends a set note only when you chose to share that note with friends; notes you keep private are never sent. Turning workout history off removes all of this from your snapshot.
+You can choose whether your stat ranks, steps, training days, and workout history are included in your derived profile snapshot for friends. Disabled fields are omitted rather than sent empty. Stat ranks sends the letter grade of each of your six stats. Workout history sends up to your 12 most recent workouts, each with its name if you named it, the muscles it worked, its lifting minutes, which exercises you did together as a superset, and its exercises with their working sets, warm-up sets, and drop-set stages, including each set's weight, reps, RPE, and whether it was a personal record. It also sends a set note only when you chose to share that note with friends; notes you keep private are never sent. Turning workout history off removes all of this from your snapshot.
 
 An invite link contains your username and tag in its URL. You choose the app or destination through which to share it, and the developer does not control where it travels. The server stores no record of invite links. A browser fallback page is built from the name and tag in the URL without a database lookup and shows nothing beyond that handle.
 
@@ -68,7 +68,7 @@ When you select Export data, the app makes a JSON file containing its raw-log ta
 
 ## Feedback
 
-If you choose Send feedback, the message you write is sent to the Fitness Hunter server along with your app version, phone model, and a random installation identifier, and is kept there so the developer can read it.
+If you choose Send feedback, or Suggest a machine from Merge to catalogue, the message is sent to the Fitness Hunter server along with your app version, phone model, and a random installation identifier, and is kept there so the developer can read it.
 
 ## Keeping and removing your data
 
