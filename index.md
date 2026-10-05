@@ -6,13 +6,17 @@ title: Fitness Hunter Privacy Policy
 
 ## Current version and changes
 
-Last updated 30 September 2026.
+Last updated 3 October 2026.
 
 This policy describes Fitness Hunter as it ships today, including its communication with a Fitness Hunter server.
 
 ## Information stored on this device
 
 Fitness Hunter keeps application data in an on-device SQLite database. This includes profile and preference information; workout, set, cardio, habit, bodyweight, health-metric, and daily step records; exercise and program data; progression and app-state records; and the optional account-link record described below.
+
+## Date of birth
+
+Fitness Hunter asks for your date of birth once, when you set up the app. It is stored only on your phone, is never sent to the Fitness Hunter server or anyone else, and never affects your rank or any stat.
 
 ## Fitness Hunter server and profile publication
 
@@ -45,6 +49,10 @@ You can report a friend from their profile. A report needs an existing friendshi
 ## Contributing to rankings
 
 Contributing to rankings is off unless you turn it on, and it works only with a linked account. When it is on, after you finish a workout the app sends, at most once a month for each exercise, your best estimated 1-rep max for that exercise together with your bodyweight, height and sex (male or female), rounded. It never sends your name, handle, account, friends, date of birth, notes or custom exercise names. The server stores each entry with the month only and no identifier, and separately counts how many entries each account sent that month, to cap them at 60, but never which ones. Turning it off stops future contributions. Past contributions stay in the pool because nothing identifies them.
+
+## Users under 13
+
+If the date of birth entered shows you are under 13, everything that would send information off your phone is turned off until your 13th birthday: account linking, friends, guilds, sharing your profile, contributing to rankings, and sending feedback. Logging workouts, XP, quests and your rank keep working on your phone.
 
 ## Device backups
 
